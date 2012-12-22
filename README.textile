@@ -1,0 +1,27 @@
+h1. Miller-One
+
+h2. Introduction
+
+Receipts receipts receipts. I don't know about your side of the world, but we get receipts for everything we buy. I'm not complaining that we get receipts its just that they are on bits of paper. Why not get them electronically? In the mean-time I'm writing this but will be positioned for the eReceipts (r)evolution..
+
+This project starts by dealing with paper receipts. From a user's perspective this will allow the receipts to be analysed, enabling displaying information such as:
+
+* Show what was bought when and where (ie. showing individual shopping receipts)
+* What items have been purchased in total
+* .. what items are most popular (what do you buy most)
+* .. how many of each was bought providing a picture over time
+* .. show where your shopping money is going
+* .. where you shop most (and where you shop all together)
+* From a Cash Application perspective (MYOB, GNUCash, ...) this will enable the easy loading of data - perhaps even automated
+* Enable integration with Shopping List applications users use on their smart devices when they go shopping
+* Information can be shown about which shops in your area have specials on the items. To the point where Shopping Lists can be created to minimise travel
+* Extend this to create an online order with those stores 
+
+h2. Workflow
+
+* Scan those receipts to PDF (indexed text version required)
+* Electronic version analysed for date, time, store, location and each item on the the receipt.
+* Store data to a database
+* Reports view then used to display all possible information about your shopping (some of these views are listed above) 
+
+For Miller, when eReceipts become a reality this will only mean skipping the scan to PDF step.
