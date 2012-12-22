@@ -1,0 +1,9 @@
+{% if shopping_items %}
+    <ul>
+    {% for item in shopping_items %}
+        <li><a href="/reports/item/{{ item.id }}/">{{ item.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No shopping items to show.</p>
+{% endif %}
