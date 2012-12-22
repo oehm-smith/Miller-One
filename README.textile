@@ -37,3 +37,18 @@ This stage is to investigate some ideas including writing such an app in Django.
 h2. Source documentation
 
 Until this project is adopted by others I'm keeping the source documentation at "tintuna.com Miller":http://tintuna.com/drupal/ProjectsAndCode/Miller.
+
+h1. Installation, set-up and configuration
+
+# Install python (installed by default on Linux and MacOSX). See Beginners guide to Python / download
+# Install Django (most popular Python web application framework). See Django project
+# git clone this - the URL is above
+# If you want to open this in Eclipse, install PyDev Python IDE plugin for Eclipse
+# If you are using PyDev:
+## Right-click on the ==<code>miller-one</code>== project and choose ==<code>Django / Sync DB</code>== - to create the SQLLite database with required application tables **(I now think that this doesn't work through PyDev - the input isn't received to setup the Admin account.  You'll need to use the command-line)**
+## Right-click on the ==<code>miller-one</code>== project and choose ==<code>Django / Custom command</code>== and add ==<code>runserver</code>== - to start the server (development only). I actually run runserver from the command-line anyway so I can see what's happening over there (rather than having to find the output window in Eclipse). See below. 
+# If you aren't using PyDev (or want to run runserver from the command-line):
+## ==<code>cd .../miller-one<br/>
+python manage.py syncdb</code>== - to create the SQLLite database with required application tables
+## ==<code>python manage.py runserver</code>== - to start the server (development only). 
+# Visit "http://localhost:8000/shopping":http://localhost:8000/shopping or "http://localhost:8000/reports":http://localhost:8000/reports 
