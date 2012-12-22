@@ -1,6 +1,6 @@
 h1. Miller-One
 
-h2. Introduction
+h2. Project Introduction
 
 Receipts receipts receipts. I don't know about your side of the world, but we get receipts for everything we buy. I'm not complaining that we get receipts its just that they are on bits of paper. Why not get them electronically? In the mean-time I'm writing this but will be positioned for the eReceipts (r)evolution..
 
@@ -25,3 +25,15 @@ h2. Workflow
 * Reports view then used to display all possible information about your shopping (some of these views are listed above) 
 
 For Miller, when eReceipts become a reality this will only mean skipping the scan to PDF step.
+
+h2. Project stage Introduction
+
+The project will be developed in stages.
+
+h3. Stage One - Miller-One
+
+This stage is to investigate some ideas including writing such an app in Django.
+
+h2. Source documentation
+
+Until this project is adopted by others I'm keeping the source documentation at "tintuna.com Miller":http://tintuna.com/drupal/ProjectsAndCode/Miller.
