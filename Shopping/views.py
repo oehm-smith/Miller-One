@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response, get_object_or_404
 from django.http import Http404
+from django.views.generic import ListView
 
 from Shopping.models import Item
 from Shopping.models import Store
@@ -15,3 +16,7 @@ def add(request):
 def item(request, item_id):
     i = get_object_or_404(Item, pk=item_id)
     return render_to_response('shopping/itemdetail.html', {'item': i})
+
+class ItemList(ListView):
+    model = Item
+    template_name = "shopping/item_list.html"

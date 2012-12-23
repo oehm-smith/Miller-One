@@ -1,12 +1,21 @@
-{% if item %}
-    <ul>
-        <li>{{ item.name }}, <a href="/shopping/Shopping/item/{{ item.id }}/">Edit</a>, <a href="/shopping/bestbuy/{{ item.id }}">Best Buy</a></li>
-        <li>{{ item.brand }}</li>
-        <li>{{ item.cost }}</li>
-        <li>{{ item.datebought }}</li>
-        <li>{{ item.store }}</li>
-        <li></li>
-    </ul>
-{% else %}
-    <p>No such shopping item to show.</p>
-{% endif %}
+{% extends "admin/base_site.html" %}
+
+{% load i18n %}
+{% block title %}Shopping Miller - view item {{item.name}}{% endblock %}
+{% block branding %}
+<h1 id="site-name">{% trans "Shopping Miller - view item '"%}{{item.name}}'</h1>
+{% endblock %}
+
+{% block content %}
+	{% if item %}
+	    <ul>
+	        <li>{{ item.name }}, <a href="/shopping/Shopping/item/{{ item.id }}/">Edit</a>, <a href="/shopping/bestbuy/{{ item.id }}">Best Buy</a></li>
+	        <li>{{ item.brand }}</li>
+	        <li>{{ item.cost }}</li>
+	        <li>{{ item.datebought }}</li>
+	        <li>{{ item.store }}</li>
+	    </ul>
+	{% else %}
+	    <p>No such shopping item to show.</p>
+	{% endif %}
+{% endblock %}

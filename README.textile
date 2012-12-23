@@ -36,7 +36,7 @@ This stage is to investigate some ideas including writing such an app in Django.
 
 h2. Source documentation
 
-Until this project is adopted by others I'm keeping the source documentation at "tintuna.com Miller":http://tintuna.com/drupal/ProjectsAndCode/Miller.
+Until this project is adopted by others I'm keeping the source documentation at "tintuna.com/Miller":http://tintuna.com/drupal/ProjectsAndCode/Miller.
 
 h1. Installation, set-up and configuration
 
